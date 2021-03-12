@@ -55,7 +55,10 @@ class CinemocracySkill(VideoCollectionSkill):
             score += 15
 
         if self.voc_match(phrase, "war"):
-            score += 15
+            score += 20
+
+        if self.voc_match(phrase, "propaganda"):
+            score += 20
 
         if self.voc_match(phrase, "cinemocracy"):
             score += 50
