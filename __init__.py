@@ -12,10 +12,10 @@ class CinemocracySkill(OVOSCommonPlaybackSkill):
         # load video catalog
         path = join(dirname(__file__), "res", "cinemocracy.jsondb")
         logo = join(dirname(__file__), "res", "cinemocracy.png")
-        self.default_image = join(dirname(__file__), "ui", "cinemocracy.png")
-        self.skill_logo = join(dirname(__file__), "ui", "cinemocracy.png")
-        self.skill_icon = join(dirname(__file__), "ui", "cinemocracy.png")
-        self.default_bg = join(dirname(__file__), "ui", "bg.jpeg")
+        self.default_image = join(dirname(__file__), "res", "cinemocracy.png")
+        self.skill_logo = join(dirname(__file__), "res", "cinemocracy.png")
+        self.skill_icon = join(dirname(__file__), "res", "cinemocracy.png")
+        self.default_bg = join(dirname(__file__), "res", "bg.jpeg")
         with open(path) as f:
             self.archive = json.load(f)["cinemocracy"]
         super().__init__(*args, **kwargs)
